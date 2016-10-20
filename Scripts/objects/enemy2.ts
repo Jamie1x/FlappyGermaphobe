@@ -1,3 +1,5 @@
+//could'nt add two objects to the scene without breaking the first object
+
 module objects {
     export class Enemy2 extends createjs.Bitmap {
 

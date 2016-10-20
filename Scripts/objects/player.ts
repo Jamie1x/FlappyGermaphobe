@@ -19,6 +19,7 @@ module objects {
         }
 
         public update(): void {
+            //keep falling unless SPACE is pressed, then jump
             if (controls.SPACE) {
                 this.jump();
                 controls.SPACE = false;
@@ -27,6 +28,7 @@ module objects {
                 this.setTransform(this.x, this.y += 2, this.scaleX, this.scaleY, this.rotation, this.skewX, this.skewY, this.regX, this.regY);
             }
 
+            //die when player leaves the area
             if ((this.y + (this.getBounds().height / 2)) > config.Screen.HEIGHT) {
                 scene = config.Scene.GAMEOVER;
                 changeScene();

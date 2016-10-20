@@ -1,4 +1,7 @@
 /// <reference path = "_reference.ts" />
+//COMP397 Assignment 2
+//Jamie Kennedy - 300753196
+//October 21, 2016
 // Global Variables
 var assets;
 var canvas;

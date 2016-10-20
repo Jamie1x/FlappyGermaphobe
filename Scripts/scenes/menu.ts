@@ -20,11 +20,11 @@ module scenes {
         }
 
         public start() : void {
-            console.log("Menu Scene Started");
-
+            //add background
             this._bg = new createjs.Bitmap(assets.getResult("BG"));
             this.addChild(this._bg);
 
+            //add title
             this._title = new createjs.Bitmap(assets.getResult("Title"));
             this._title.regX = this._title.getBounds().width / 2;
             this._title.regY = this._title.getBounds().height / 2;
@@ -32,6 +32,7 @@ module scenes {
             this._title.y = config.Screen.CENTER_Y - 100;
             this.addChild(this._title);
 
+            //add buttons
             this._playBtn = new objects.Button("PlayBtn", config.Screen.CENTER_X - 150, config.Screen.CENTER_Y + 100);
             this.addChild(this._playBtn);
             this._playBtn.on("click", this._startButtonClick, this);

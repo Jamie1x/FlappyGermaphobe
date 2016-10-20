@@ -15,7 +15,9 @@ var objects;
             this.regY = this.getBounds().height / 2;
         }
         Enemy.prototype.update = function () {
+            //make enemies move toward player
             this.setTransform(this.x -= 2, this.y, this.scaleX, this.scaleY, this.rotation, this.skewX, this.skewY, this.regX, this.regY);
+            //destroy object when it leaves the screen and spawn new enemy
             if (this.x <= -50) {
                 newEnemy = true;
                 currentScene.removeChild(this);

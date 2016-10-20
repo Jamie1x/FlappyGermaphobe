@@ -20,11 +20,11 @@ module scenes {
         }
 
         public start() : void {
-            console.log("Instructions Scene Started");
-
+            //add background
             this._bg = new createjs.Bitmap(assets.getResult("BG"));
             this.addChild(this._bg);
 
+            //add instructions image
             this._instructions = new createjs.Bitmap(assets.getResult("Instructions"));
             this._instructions.regX = this._instructions.getBounds().width / 2;
             this._instructions.regY = this._instructions.getBounds().height / 2;
@@ -32,6 +32,7 @@ module scenes {
             this._instructions.y = config.Screen.CENTER_Y - 35;
             this.addChild(this._instructions);
 
+            //add buttons
             this._playBtn = new objects.Button("PlayBtn", config.Screen.CENTER_X + 150, config.Screen.CENTER_Y + 200);
             this.addChild(this._playBtn);
             this._playBtn.on("click", this._startButtonClick, this);
