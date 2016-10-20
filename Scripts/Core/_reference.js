@@ -8,6 +8,7 @@
 /// <reference path="../objects/scene.ts" />
 /// <reference path="../objects/player.ts" />
 /// <reference path="../objects/enemy.ts" />
+/// <reference path="../objects/enemy2.ts" />
 /// <reference path="../managers/collision.ts" />
 /// <reference path="../scenes/menu.ts" />
 /// <reference path="../scenes/play.ts" />
