@@ -16,7 +16,7 @@ var scenes;
             _super.call(this);
         }
         Gameover.prototype.start = function () {
-            console.log("Menu Scene Started");
+            console.log("Gameover Scene Started");
             this._bg = new createjs.Bitmap(assets.getResult("BG"));
             this.addChild(this._bg);
             this._gameOver = new createjs.Bitmap(assets.getResult("GameOver"));
@@ -25,8 +25,8 @@ var scenes;
             this._gameOver.x = config.Screen.CENTER_X;
             this._gameOver.y = config.Screen.CENTER_Y - 100;
             this.addChild(this._gameOver);
-            this._scoreLbl = new createjs.Text("Score: " + score, "20px 'Press Start 2P'", "#000000");
-            this._scoreLbl.x = config.Screen.CENTER_X - 100;
+            this._scoreLbl = new createjs.Text("Score: " + score, "30px 'Press Start 2P'", "#000000");
+            this._scoreLbl.x = config.Screen.CENTER_X - 125;
             this._scoreLbl.y = config.Screen.CENTER_Y - 50;
             this.addChild(this._scoreLbl);
             this._playBtn = new objects.Button("PlayBtn", config.Screen.CENTER_X + 150, config.Screen.CENTER_Y + 100);

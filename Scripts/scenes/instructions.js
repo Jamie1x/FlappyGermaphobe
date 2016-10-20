@@ -16,14 +16,14 @@ var scenes;
             _super.call(this);
         }
         Instructions.prototype.start = function () {
-            console.log("Menu Scene Started");
+            console.log("Instructions Scene Started");
             this._bg = new createjs.Bitmap(assets.getResult("BG"));
             this.addChild(this._bg);
             this._instructions = new createjs.Bitmap(assets.getResult("Instructions"));
             this._instructions.regX = this._instructions.getBounds().width / 2;
             this._instructions.regY = this._instructions.getBounds().height / 2;
             this._instructions.x = config.Screen.CENTER_X;
-            this._instructions.y = config.Screen.CENTER_Y - 50;
+            this._instructions.y = config.Screen.CENTER_Y - 35;
             this.addChild(this._instructions);
             this._playBtn = new objects.Button("PlayBtn", config.Screen.CENTER_X + 150, config.Screen.CENTER_Y + 200);
             this.addChild(this._playBtn);

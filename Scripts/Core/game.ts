@@ -16,6 +16,7 @@ var instructionsScene: scenes.Instructions;
 
 var collision: managers.Collision;
 var newEnemy: boolean;
+var newEnemy2: boolean;
 var score: number;
 
 // Preload Assets required

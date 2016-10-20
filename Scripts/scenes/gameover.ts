@@ -21,7 +21,7 @@ module scenes {
         }
 
         public start() : void {
-            console.log("Menu Scene Started");
+            console.log("Gameover Scene Started");
 
             this._bg = new createjs.Bitmap(assets.getResult("BG"));
             this.addChild(this._bg);
@@ -33,8 +33,8 @@ module scenes {
             this._gameOver.y = config.Screen.CENTER_Y - 100;
             this.addChild(this._gameOver);
 
-            this._scoreLbl = new createjs.Text("Score: " + score, "20px 'Press Start 2P'", "#000000");
-            this._scoreLbl.x = config.Screen.CENTER_X - 100;
+            this._scoreLbl = new createjs.Text("Score: " + score, "30px 'Press Start 2P'", "#000000");
+            this._scoreLbl.x = config.Screen.CENTER_X - 125;
             this._scoreLbl.y = config.Screen.CENTER_Y - 50;
             this.addChild(this._scoreLbl);
 

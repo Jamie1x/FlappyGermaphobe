@@ -12,6 +12,7 @@ var gameoverScene;
 var instructionsScene;
 var collision;
 var newEnemy;
+var newEnemy2;
 var score;
 // Preload Assets required
 var assetData = [
